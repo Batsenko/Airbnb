@@ -2,6 +2,96 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+html {
+  body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Avenir", sans-serif;
+  }
+}
+
+header {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    .leftbar {
+      display: flex;
+      height: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-left: 24px;
+    }
+
+    .rightbar {
+      display: flex;
+      height: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .menuitem {
+        font-size: 16px;
+        font-style: heavy;
+        font-weight: bold;
+        line-height: 19px;
+        margin-right: 30px;
+        color: #3d4e61;
+      }
+
+      .avatar {
+        margin: 15px 19px 15px 8px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+main {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 39px 0 75px;
+    .leftbar {
+      width: 482px;
+      height: 1266px;
+    }
+    .rightbar {
+      width: 330px;
+      height: 319px;
+      border: 1px solid #e1e7ed;
+      box-sizing: border-box;
+      border-radius: 3px;
+    }
+  }
+}
+
+footer {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 213px;
+    justify-content: space-around;
+    box-shadow: 0 -1px 0 #e1e7ed;
+    .bar {
+      font-size: 16px;
+      line-height: 19px;
+      .title {
+        margin-top: 40px;
+        font-weight: bold;
+        font-style: heavy;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.mainimage {
+  max-width: 100%;
 }
