@@ -1,6 +1,8 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+$font-size-text: 16px;
+$line-height-text: 19px;
 
 html {
   body {
@@ -55,11 +57,135 @@ main {
   .container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     margin: 39px 0 75px;
+    font-family: Avenir, serif;
+    p {
+      margin: 0;
+    }
     .leftbar {
-      width: 482px;
+      width: 493px;
       height: 1266px;
+      color: #3D4E61;
+      h1 {
+        font-size: 36px;
+        line-height: 42px;
+        margin: 0;
+      }
+      .description {
+        font-size: $font-size-text;
+        line-height: $line-height-text;
+        color: #687C94;
+        margin-top: 10px;
+      }
+      .columns {
+        font-size: 1$font-size-text;
+        line-height: $line-height-text;
+        p {
+          display: inline-block;
+          width: 82px;
+          margin-top: 15px;
+        }
+        :first-child {
+          margin-right: 11px;
+        }
+        :last-child {
+          margin-left: 5px;
+        }
+      }
+      .info {
+        width: 491px;
+        height: 120px;
+        font-size: $font-size-text;
+        line-height: 24px;
+        margin-top: 28px;
+      }
+      .contact {
+        font-size: $font-size-text;
+        line-height: $line-height-text;
+        margin-top: 6px;
+        font-weight: bold;
+      }
+      .amenities {
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 44px;
+        font-weight: bold;
+        .amenity {
+          font-size: $font-size-text;
+          line-height: $line-height-text;
+          display: grid;
+          grid-template: auto / 176px 176px;
+          gap: 13px 20px;
+          font-weight: normal;
+          margin-top: 21px;
+          p {
+            width: 176px;
+            height: 29px;
+          }
+        }
+        .allAmenity {
+          font-size: $font-size-text;
+          line-height: $line-height-text;
+          margin-top: 13px;
+          font-weight: bold;
+        }
+      }
+      .reviews {
+        font-size: 28px;
+        line-height: 33px;
+        margin-top: 66px;
+        font-weight: bold;
+        .review {
+          margin-top: 34px;
+          display: grid;
+          grid-template: 50px 120px / 50px auto;
+          grid-row-gap: 23px;
+
+          .picture {
+            width: 50px;
+            height: 50px;
+            background-color: #C4C4C4;
+            border-radius: 50%;
+          }
+          .name-date {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            p {
+              margin: 0 0 0 21px;
+            }
+            .name {
+              display: inline;
+              font-size: 20px;
+              line-height: 27px;
+            }
+            .date {
+              align-self: end;
+              display: inline;
+              font-size: 14px;
+              line-height: 16px;
+            }
+          }
+          .testReview {
+            grid-area: 2 / 1 / 3/ 3;
+            font-size: $font-size-text;
+            line-height: $line-height-text;
+            font-weight: normal;
+          }
+        }
+      }
+      .last-title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+      }
+      .hosted {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 11px;
+      }
+
     }
     .rightbar {
       width: 330px;
@@ -67,6 +193,8 @@ main {
       border: 1px solid #e1e7ed;
       box-sizing: border-box;
       border-radius: 3px;
+      margin-left: 78px;
+
     }
   }
 }
