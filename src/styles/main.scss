@@ -257,21 +257,26 @@ main {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -1px 0 #e1e7ed;
   .container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 213px;
-    justify-content: space-around;
-    box-shadow: 0 -1px 0 #e1e7ed;
-    .bar {
-      font-size: 16px;
-      line-height: 19px;
-      .title {
-        margin-top: 40px;
-        font-weight: bold;
-        font-style: heavy;
-        margin-bottom: 24px;
+    width: 901px;
+    .ccontainer {
+      width: 780px;
+      display: flex;
+      flex-direction: row;
+      height: 213px;
+      justify-content: space-between;
+      .bar {
+        font-size: 16px;
+        line-height: 19px;
+        .title {
+          margin-top: 40px;
+          font-weight: bold;
+          font-style: heavy;
+          margin-bottom: 24px;
+        }
       }
     }
   }

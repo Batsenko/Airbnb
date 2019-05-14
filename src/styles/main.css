@@ -1,231 +1,286 @@
 h1 {
   font-family: "Roboto", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 html body {
   margin: 0;
   padding: 0;
   color: black;
-  font-family: "Avenir", sans-serif; }
+  font-family: "Avenir", sans-serif;
+}
 
 header .container {
   width: 100%;
   display: flex;
   flex-direction: row;
   height: 60px;
-  justify-content: space-between; }
-  header .container .leftbar {
-    display: flex;
-    height: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 24px; }
-  header .container .rightbar {
-    display: flex;
-    height: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    header .container .rightbar .menuitem {
-      font-size: 16px;
-      font-style: heavy;
-      font-weight: bold;
-      line-height: 19px;
-      margin-right: 30px;
-      color: #3d4e61; }
-    header .container .rightbar .avatar {
-      margin: 15px 19px 15px 8px;
-      width: 30px;
-      height: 30px; }
+  justify-content: space-between;
+}
+header .container .leftbar {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+}
+header .container .rightbar {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .rightbar .menuitem {
+  font-size: 16px;
+  font-style: heavy;
+  font-weight: bold;
+  line-height: 19px;
+  margin-right: 30px;
+  color: #3d4e61;
+}
+header .container .rightbar .avatar {
+  margin: 15px 19px 15px 8px;
+  width: 30px;
+  height: 30px;
+}
 
 main .container {
   display: flex;
   justify-content: center;
   margin: 39px 0 75px;
-  font-family: Avenir, serif; }
-  main .container p {
-    margin: 0; }
-  main .container .leftbar {
-    width: 493px;
-    height: 1266px;
-    color: #3d4e61; }
-    main .container .leftbar h1 {
-      font-size: 36px;
-      line-height: 42px;
-      margin: 0; }
-    main .container .leftbar .description {
-      font-size: 16px;
-      line-height: 19px;
-      color: #687c94;
-      margin-top: 10px; }
-    main .container .leftbar .columns {
-      font-size: 16px;
-      line-height: 19px; }
-      main .container .leftbar .columns p {
-        display: inline-block;
-        width: 82px;
-        margin-top: 15px; }
-      main .container .leftbar .columns :first-child {
-        margin-right: 11px; }
-      main .container .leftbar .columns :last-child {
-        margin-left: 5px; }
-    main .container .leftbar .info {
-      position: relative;
-      width: 491px;
-      height: 120px;
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: 28px; }
-    main .container .leftbar .contact {
-      font-size: 16px;
-      line-height: 19px;
-      margin-top: 6px;
-      font-weight: bold; }
-    main .container .leftbar .amenities {
-      font-size: 20px;
-      line-height: 23px;
-      margin-top: 44px;
-      font-weight: bold; }
-      main .container .leftbar .amenities .amenity {
-        font-size: 16px;
-        line-height: 19px;
-        display: grid;
-        grid-template: auto / 176px 176px;
-        gap: 13px 20px;
-        font-weight: normal;
-        margin-top: 21px; }
-        main .container .leftbar .amenities .amenity p {
-          width: 176px;
-          height: 29px; }
-      main .container .leftbar .amenities .allAmenity {
-        font-size: 16px;
-        line-height: 19px;
-        margin-top: 13px;
-        font-weight: bold; }
-      main .container .leftbar .amenities .allAmenity:hover {
-        cursor: pointer; }
-    main .container .leftbar .reviews {
-      font-size: 28px;
-      line-height: 33px;
-      margin-top: 66px;
-      font-weight: bold; }
-      main .container .leftbar .reviews .review {
-        display: grid;
-        grid-template: 50px 120px / 50px auto;
-        grid-row-gap: 23px; }
-        main .container .leftbar .reviews .review:not(:last-child) {
-          margin-top: 34px; }
-        main .container .leftbar .reviews .review .picture {
-          width: 50px;
-          height: 50px;
-          background-color: #c4c4c4;
-          border-radius: 50%; }
-        main .container .leftbar .reviews .review .name-date {
-          display: grid;
-          grid-template-rows: 1fr 1fr; }
-          main .container .leftbar .reviews .review .name-date p {
-            margin: 0 0 0 21px; }
-          main .container .leftbar .reviews .review .name-date .name {
-            display: inline;
-            font-size: 20px;
-            line-height: 27px; }
-          main .container .leftbar .reviews .review .name-date .date {
-            align-self: end;
-            display: inline;
-            font-size: 14px;
-            line-height: 16px; }
-        main .container .leftbar .reviews .review .testReview {
-          grid-area: 2 / 1 / 3/ 3;
-          font-size: 16px;
-          line-height: 19px;
-          font-weight: normal; }
-    main .container .leftbar .last-title {
-      font-family: Roboto, serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 28px;
-      line-height: 33px; }
-    main .container .leftbar .hosted {
-      font-size: 14px;
-      line-height: 16px;
-      margin-top: 11px; }
-    main .container .leftbar .contactlink {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      font-size: 16px;
-      line-height: 22px;
-      color: #118488;
-      padding: 15px 24px 13px 27px;
-      border: 1px solid #118488;
-      box-sizing: border-box;
-      border-radius: 4px; }
-    main .container .leftbar .contactlink:hover {
-      cursor: pointer; }
-  main .container .rightbar {
-    width: 330px;
-    height: 319px;
-    border: 1px solid #e1e7ed;
-    box-sizing: border-box;
-    border-radius: 3px;
-    margin-left: 78px; }
-    main .container .rightbar .form_price {
-      font-size: 16px;
-      line-height: 19px;
-      color: #3d4e61;
-      margin: 30px 189px 0 30px;
-      font-weight: bold; }
-    main .container .rightbar .form_date,
-    main .container .rightbar .form_guests {
-      display: block;
-      background: #fff;
-      border: 1px solid #e1e7ed;
-      box-sizing: border-box;
-      border-radius: 3px;
-      width: 270px;
-      height: 50px;
-      padding-left: 17px; }
-    main .container .rightbar .form_date {
-      margin: 39px 30px 0; }
-    main .container .rightbar .form_guests {
-      margin: 16px 30px 0; }
-    main .container .rightbar .form_reserve {
-      font-size: 16px;
-      line-height: 19px;
-      color: #fff;
-      background: #fd5c63;
-      border: 1px solid #fd5c63;
-      box-sizing: border-box;
-      border-radius: 4px;
-      width: 270px;
-      height: 50px;
-      margin: 24px 30px 0; }
-    main .container .rightbar .form_reserve:hover {
-      cursor: pointer; }
+  font-family: Avenir, serif;
+}
+main .container p {
+  margin: 0;
+}
+main .container .leftbar {
+  width: 493px;
+  height: 1266px;
+  color: #3d4e61;
+}
+main .container .leftbar h1 {
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0;
+}
+main .container .leftbar .description {
+  font-size: 16px;
+  line-height: 19px;
+  color: #687c94;
+  margin-top: 10px;
+}
+main .container .leftbar .columns {
+  font-size: 16px;
+  line-height: 19px;
+}
+main .container .leftbar .columns p {
+  display: inline-block;
+  width: 82px;
+  margin-top: 15px;
+}
+main .container .leftbar .columns :first-child {
+  margin-right: 11px;
+}
+main .container .leftbar .columns :last-child {
+  margin-left: 5px;
+}
+main .container .leftbar .info {
+  position: relative;
+  width: 491px;
+  height: 120px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 28px;
+}
+main .container .leftbar .contact {
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 6px;
+  font-weight: bold;
+}
+main .container .leftbar .amenities {
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 44px;
+  font-weight: bold;
+}
+main .container .leftbar .amenities .amenity {
+  font-size: 16px;
+  line-height: 19px;
+  display: grid;
+  grid-template: auto/176px 176px;
+  gap: 13px 20px;
+  font-weight: normal;
+  margin-top: 21px;
+}
+main .container .leftbar .amenities .amenity p {
+  width: 176px;
+  height: 29px;
+}
+main .container .leftbar .amenities .allAmenity {
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 13px;
+  font-weight: bold;
+}
+main .container .leftbar .amenities .allAmenity:hover {
+  cursor: pointer;
+}
+main .container .leftbar .reviews {
+  font-size: 28px;
+  line-height: 33px;
+  margin-top: 66px;
+  font-weight: bold;
+}
+main .container .leftbar .reviews .review {
+  display: grid;
+  grid-template: 50px 120px/50px auto;
+  grid-row-gap: 23px;
+}
+main .container .leftbar .reviews .review:not(:last-child) {
+  margin-top: 34px;
+}
+main .container .leftbar .reviews .review .picture {
+  width: 50px;
+  height: 50px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+}
+main .container .leftbar .reviews .review .name-date {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+main .container .leftbar .reviews .review .name-date p {
+  margin: 0 0 0 21px;
+}
+main .container .leftbar .reviews .review .name-date .name {
+  display: inline;
+  font-size: 20px;
+  line-height: 27px;
+}
+main .container .leftbar .reviews .review .name-date .date {
+  align-self: end;
+  display: inline;
+  font-size: 14px;
+  line-height: 16px;
+}
+main .container .leftbar .reviews .review .testReview {
+  grid-area: 2/1/3/3;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+}
+main .container .leftbar .last-title {
+  font-family: Roboto, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+}
+main .container .leftbar .hosted {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 11px;
+}
+main .container .leftbar .contactlink {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #118488;
+  padding: 15px 24px 13px 27px;
+  border: 1px solid #118488;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+main .container .leftbar .contactlink:hover {
+  cursor: pointer;
+}
+main .container .rightbar {
+  width: 330px;
+  height: 319px;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-left: 78px;
+}
+main .container .rightbar .form_price {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+  margin: 30px 189px 0 30px;
+  font-weight: bold;
+}
+main .container .rightbar .form_date,
+main .container .rightbar .form_guests {
+  display: block;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 270px;
+  height: 50px;
+  padding-left: 17px;
+}
+main .container .rightbar .form_date {
+  margin: 39px 30px 0;
+}
+main .container .rightbar .form_guests {
+  margin: 16px 30px 0;
+}
+main .container .rightbar .form_reserve {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  background: #fd5c63;
+  border: 1px solid #fd5c63;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 270px;
+  height: 50px;
+  margin: 24px 30px 0;
+}
+main .container .rightbar .form_reserve:hover {
+  cursor: pointer;
+}
 
+footer {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -1px 0 #e1e7ed;
+}
 footer .container {
-  width: 100%;
+  width: 901px;
+}
+footer .container .ccontainer {
+  width: 780px;
   display: flex;
   flex-direction: row;
   height: 213px;
-  justify-content: space-around;
-  box-shadow: 0 -1px 0 #e1e7ed; }
-  footer .container .bar {
-    font-size: 16px;
-    line-height: 19px; }
-    footer .container .bar .title {
-      margin-top: 40px;
-      font-weight: bold;
-      font-style: heavy;
-      margin-bottom: 24px; }
+  justify-content: space-between;
+}
+footer .container .ccontainer .bar {
+  font-size: 16px;
+  line-height: 19px;
+}
+footer .container .ccontainer .bar .title {
+  margin-top: 40px;
+  font-weight: bold;
+  font-style: heavy;
+  margin-bottom: 24px;
+}
 
 .mainimage {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */
