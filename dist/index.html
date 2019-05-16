@@ -7,34 +7,34 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container"> <!-- Why you need this container? You can add class to the header and write there all the rules.  -->
         <div class="leftbar">
             <a href="#">
-                <img src="images/airbnb-logo.png" alt="">
+                <img src="images/airbnb-logo.png" alt=""> <!-- alt? -->
             </a>
         </div>
-        <div class="rightbar">
-            <a class="menuitem">
+        <div class="rightbar"> <!-- Use semantic tag nav -->
+            <a class="menuitem"> <!-- add cursor pointer for a -->
                 Become a host
             </a>
-            <a class="menuitem">
+            <a class="menuitem"> <!-- add atribute href -->
                 Trips
             </a>
             <a class="menuitem">
                 Messages
             </a>
             <a class="avatar">
-            <img src="images/headshot.jpg"  alt="" />
+            <img src="images/headshot.jpg"  alt="" /> <!-- alt? --> <!-- this img does not refer to navigation. It's avatar-->
             </a>
         </div>
       </div>
-      <img src="images/picture1.jpg" class="mainimage" alt="">
+      <img src="images/picture1.jpg" class="mainimage" alt=""> <!-- alt? Better to create div and add him background instead use imag -->
     </header>
     <main>
       <div class="container">
-        <div class="leftbar">
+        <div class="leftbar"> <!-- try to use semantic tag like section, article, aside -->
             <div class="newsitem">
-                <p class="title">
+                <p class="title"> <!-- Why do you insert `h1` in a paragraph? -->
                     <h1>Quiet apartaments</h1>
                 </p>
                 <p class="description">
@@ -107,21 +107,21 @@
             </div>
         </div>
         <div class="rightbar">
-            <form>
+            <form> <!-- outline for elements -->
               <div class="form_price">25$ per night</div>
-              <input class="form_date" type="text" placeholder="Date">
+              <input class="form_date" type="text" placeholder="Date"> <!-- add style for placeholder -->
               <input class="form_guests" type="text" placeholder="Guests">
-              <button class="form_reserve">Book</button>
+              <button class="form_reserve">Book</button> <!-- need atribute submit -->
             </form>
         </div>
       </div>
     </main>
     <footer>
       <div class="container">
-        <div class="ccontainer">
+        <div class="ccontainer"> <!-- Why you add two container? -->
           <div class="bar">
             <p class="title">Airbnb</p>
-            <p>About</p>
+            <p>About</p> <!-- it's must be links -->
             <p>Press</p>
             <p>Help</p>
           </div>
